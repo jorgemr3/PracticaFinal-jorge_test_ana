@@ -11,6 +11,11 @@ public class CollisionDetector : MonoBehaviour
         {   
              ChangeSceneUtil.Change(2);
             // Lógica para cuando el objeto colisiona con el Portal
+        } else if (collision.gameObject.CompareTag("Soul"))
+        {
+            // Lógica para cuando el objeto colisiona con un Obstáculo
+            ChangeSceneUtil.Change(0);
+            
         }
         else if (CountersSingleton.Instance.GetScoreCounter() == 3)
         {

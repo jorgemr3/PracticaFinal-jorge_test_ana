@@ -510,12 +510,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\xBFQu\xE9 has hecho con lo que te fue dado? \xBFQu\xE9 dejaste sin intentar,
-    qu\xE9 puntos abandonaste? \nConformidad, o Ambici\xF3n?\nBienvenido al Sendero
-    Inmaterial, donde el eco de tus decisiones resuena con fuerza. Aqu\xED, el peso
-    de lo no realizado  te acompa\xF1a en un pabell\xF3n de reflexi\xF3n. Antes pudiste
-    hacer lo que quisieras, pero ahora que quieres hacer? \nPresiona ESPACIO para
-    arrepentirte, o camina al portal para volver al ciclo..."
+  m_text: 'placeholder
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1079,13 +1076,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 591531263}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.22285594, y: -0.2518364, z: 0.059714105, w: 0.9398659}
+  m_LocalRotation: {x: -0.026040426, y: -0.25872505, z: -0.006977488, w: 0.96557474}
   m_LocalPosition: {x: 0.51, y: 2.15, z: -0.88}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 26.679, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: -3.09, y: -30, z: 0}
 --- !u!1 &594523779
 GameObject:
   m_ObjectHideFlags: 0
@@ -1699,7 +1696,7 @@ GameObject:
   - component: {fileID: 1021197292}
   m_Layer: 0
   m_Name: Soul
-  m_TagString: Untagged
+  m_TagString: Soul
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2181,6 +2178,7 @@ GameObject:
   - component: {fileID: 1274023693}
   - component: {fileID: 1274023692}
   - component: {fileID: 1274023691}
+  - component: {fileID: 1274023695}
   m_Layer: 0
   m_Name: PORTALL
   m_TagString: Untagged
@@ -2275,6 +2273,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1274023695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1274023690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fd3ebab8c011ae4b972fde7a7bc2de3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1362081535
 GameObject:
   m_ObjectHideFlags: 0
@@ -3483,6 +3493,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2009772203}
+  - component: {fileID: 2009772204}
   m_Layer: 0
   m_Name: HandlePreguntas
   m_TagString: Untagged
@@ -3505,6 +3516,44 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2009772204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009772202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88b984db6c4bd62478ade3203c54bd70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questionText: {fileID: 232165816}
+  questionCount: 21
+  questions:
+  - "\xBFQu\xE9 har\xEDas si supieras que no puedes fallar?"
+  - "\xBFEs m\xE1s importante el destino o el camino hacia \xE9l?"
+  - "\xBFVives para los dem\xE1s o para ti mismo?"
+  - "\xBFLa vida tiene un prop\xF3sito o somos nosotros quienes le damos uno?"
+  - "\xBFEs la felicidad un fin o una consecuencia de nuestras acciones?"
+  - "\xBFLa muerte es el final de todo o solo una transici\xF3n hacia algo m\xE1s?"
+  - "\xBFQu\xE9 define qui\xE9n eres: tus acciones o tus pensamientos?"
+  - "\xBFEl sufrimiento es necesario para el crecimiento personal?"
+  - "\xBFEs posible vivir sin miedo? \xBFQu\xE9 pasar\xEDa si lo intentaras?"
+  - "\xBFQu\xE9 significa realmente \"vivir en el presente\"?"
+  - "\xBFEs el amor una elecci\xF3n o una emoci\xF3n incontrolable?"
+  - "\xBFLa libertad es una bendici\xF3n o una carga?"
+  - "\xBFEs mejor vivir una vida plena pero corta, o una vida larga pero sin prop\xF3sito?"
+  - "\xBFEl dolor es algo que debemos evitar o algo que debemos aceptar para entender
+    la vida?"
+  - "\xBFEs el ego un obst\xE1culo o una herramienta para la autodefinici\xF3n?"
+  - "\xBFLa verdad es absoluta o depende de qui\xE9n la vea?"
+  - "\xBFEl arrepentimiento es \xFAtil o solo una carga emocional?"
+  - "\xBFHay algo m\xE1s all\xE1 de lo que vemos, o nuestra percepci\xF3n es todo
+    lo que existe?"
+  - "\xBFEs la vida una sucesi\xF3n de coincidencias o cada evento tiene un prop\xF3sito?"
+  - "\xBFEl tiempo nos define o solo existe como una ilusi\xF3n que nos limita?"
+  - "\xBFEs la muerte un final, o simplemente otra forma de existir?"
 --- !u!1 &2010609523
 GameObject:
   m_ObjectHideFlags: 0

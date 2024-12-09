@@ -9,6 +9,7 @@ TagManager:
   - Puntos
   - Portal
   - PlacaRayCast
+  - Soul
   layers:
   - Default
   - TransparentFX
